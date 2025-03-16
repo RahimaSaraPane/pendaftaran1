@@ -12,16 +12,33 @@
             font-family: Arial, sans-serif;
         }
         .container {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
-            max-width: 600px;
+            max-width: 500px;
             margin: 50px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         .header {
             text-align: center;
             margin-bottom: 20px;
+        }
+        .logo img {
+            width: 120px; /* Ukuran logo diperbaiki */
+            display: block;
+            margin: 0 auto 10px;
+        }
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         .buttons {
             text-align: center;
@@ -42,75 +59,74 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
+    <div class="container">
+        <div class="header">
             <div class="logo">
-                <img class="logo" src="logo_unp.png" alt="LOGO UNP">
+                <img src="logo_unp.png" alt="LOGO UNP">
             </div>
-            
             <h1>UNP</h1>
             <h2>Isi Formulir Pendaftaran</h2>
-            
-            <form>
-                <label for="nama">Nama:</label>
-                <input type="text" id="nama" name="nama">
-                
-                <label for="tempat_lahir">Tempat Lahir:</label>
-                <input type="text" id="tempat_lahir" name="tempat_lahir">
-                
-                <label for="tanggal_lahir">Tanggal Lahir:</label>
-                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
-                
-                <label for="jenis_kelamin">Jenis Kelamin:</label>
-                <select id="jenis_kelamin" name="jenis_kelamin">
-                    <option value="laki-laki">Laki-laki</option>
-                    <option value="perempuan">Perempuan</option>
-                </select>
-                
-                <label for="agama">Agama:</label>
-                <input type="text" id="agama" name="agama">
-                
-                <label for="asal_sekolah">Asal Sekolah:</label>
-                <input type="text" id="asal_sekolah" name="asal_sekolah">
-                
-                <h3>Alamat</h3>
-                <label for="provinsi">Provinsi:</label>
-                <input type="text" id="provinsi" name="provinsi">
-                
-                <label for="kabupaten">Kabupaten/Kota:</label>
-                <input type="text" id="kabupaten" name="kabupaten">
-                
-                <label for="kecamatan">Kecamatan:</label>
-                <input type="text" id="kecamatan" name="kecamatan">
-                
-                <label for="kelurahan">Kelurahan:</label>
-                <input type="text" id="kelurahan" name="kelurahan">
-                
-                <label for="kode_pos">Kode Pos:</label>
-                <input type="text" id="kode_pos" name="kode_pos">
-                
-                <label for="no_hp">No HP:</label>
-                <input type="tel" id="no_hp" name="no_hp">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                
-                <h3>Data Orang Tua</h3>
-                <label for="nama_ayah">Nama Ayah:</label>
-                <input type="text" id="nama_ayah" name="nama_ayah">
-                
-                <label for="pekerjaan_ayah">Pekerjaan:</label>
-                <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah">
-                
-                <label for="nama_ibu">Nama Ibu:</label>
-                <input type="text" id="nama_ibu" name="nama_ibu">
-                
-                <div class="buttons">
-                    <button type="submit">Simpan</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </form>
         </div>
+        
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama">
+            
+            <label for="tempat_lahir">Tempat Lahir:</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir">
+            
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            
+            <label for="agama">Agama:</label>
+            <input type="text" id="agama" name="agama">
+            
+            <label for="asal_sekolah">Asal Sekolah:</label>
+            <input type="text" id="asal_sekolah" name="asal_sekolah">
+            
+            <h3>Alamat</h3>
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi">
+            
+            <label for="kabupaten">Kabupaten/Kota:</label>
+            <input type="text" id="kabupaten" name="kabupaten">
+            
+            <label for="kecamatan">Kecamatan:</label>
+            <input type="text" id="kecamatan" name="kecamatan">
+            
+            <label for="kelurahan">Kelurahan:</label>
+            <input type="text" id="kelurahan" name="kelurahan">
+            
+            <label for="kode_pos">Kode Pos:</label>
+            <input type="text" id="kode_pos" name="kode_pos">
+            
+            <label for="no_hp">No HP:</label>
+            <input type="tel" id="no_hp" name="no_hp">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <h3>Data Orang Tua</h3>
+            <label for="nama_ayah">Nama Ayah:</label>
+            <input type="text" id="nama_ayah" name="nama_ayah">
+            
+            <label for="pekerjaan_ayah">Pekerjaan:</label>
+            <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah">
+            
+            <label for="nama_ibu">Nama Ibu:</label>
+            <input type="text" id="nama_ibu" name="nama_ibu">
+            
+            <div class="buttons">
+                <button type="submit">Simpan</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
